@@ -8,7 +8,7 @@
 
 		<link rel="shortcut icon" type="image/png" href="favicon32.ico">
 
-		<title>favico.js - Make a use of your favicon</title>
+		<title>favico.js - 利用你的 favicon</title>
 		<meta property="og:title" content="favico.js"/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="http://lab.ejci.net/favico.js/"/>
@@ -39,15 +39,15 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href="http://lab.ejci.net/favico.js/">favico.js</a>
+							<a class="navbar-brand" href="../">favico.js</a>
 						</div>
 						<div class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li>
-									<a href="https://github.com/ejci/favico.js/tree/master/example-simple/"><i class="icon-code"></i> Source</a>
+									<a href="https://github.com/ejci/favico.js/tree/master/example-simple/"><i class="icon-code"></i> 源码</a>
 								</li>
 								<li>
-									<a href="mailto:magda.miroslav@gmail.com"><i class="icon-envelope-alt"></i> Contact</a>
+									<a href="mailto:magda.miroslav@gmail.com"><i class="icon-envelope-alt"></i> 联系我</a>
 								</li>
 							</ul>
 						</div>
@@ -88,7 +88,7 @@
 				&nbsp;&nbsp;&nbsp;<i class="icon-circle-arrow-down"></i> -1&nbsp;&nbsp;&nbsp;
 			</button>
 			<button id="reset" class="btn btn-sm btn-primary favBadge">
-				<i class="icon-off"></i> Reset
+				<i class="icon-off"></i> 重置
 			</button>
 		</div>
 
@@ -98,27 +98,5 @@
 		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 		<script src="../favico.min.js"></script>
-		<script>
-			$(document).ready(function() {
-				var badge = 5;
-				var favicon = new Favico({
-					animation : 'popFade'
-				});
-				$('#plusOne').bind('click', function() {
-					badge = badge + 1;
-					favicon.badge(badge);
-				});
-				$('#minusOne').bind('click', function() {
-					badge = (badge - 1 < 0) ? 0 : (badge - 1);
-					favicon.badge(badge);
-				});
-				$('#reset').bind('click', function() {
-					favicon.reset();
-				});
-				//intial value
-				favicon.badge(badge);
-			});
-		</script>
-
 	</body>
 </html>
